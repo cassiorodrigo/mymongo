@@ -1,0 +1,22 @@
+[project]
+name = "mongo-server"
+version = "0.1.0"
+description = "my own mongo db server"
+authors = [
+    {name = "Cassio Peluso", email = "cassiorodrigo@gmail.com"},
+]
+dependencies = [
+    "graphene-mongo>=0.4.3",
+    "pre-commit>=3.7.0",
+    "black>=24.4.0",
+    "lint>=1.2.1",
+    "ruff>=0.3.7",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
