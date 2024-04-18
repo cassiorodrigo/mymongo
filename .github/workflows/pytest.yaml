@@ -16,10 +16,10 @@ jobs:
                   cache: true
         - name: Install dependencies
           run: pdm install
-        
+
         - name: Run tests with pytest
-          run: pdm run pytest --cov=./src/
-        
+          run: pdm run pytest --cov=./src/ --cov-fail-under=100
+
         - name: Upload coverage to codecov
           uses: codecov/codecov-action@v4.3.0
           with:
